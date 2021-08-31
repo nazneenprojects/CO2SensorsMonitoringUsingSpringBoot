@@ -96,12 +96,12 @@ You will see 'EMISSIONTBL' created under DS.
 Fire query 'SELECT * FROM EMISSIONTBL ' to get all records.
 
 ### Refer below column information
-"id": Auto generated ID
-"uuid": User passes uuid through url. One uuid will be mapped with multiple CO2 records which user will provide via POST end point.
-"productId": This is constant since it is reading data for "sensor" product.
-"co2": Integer value in PPM.
-"recordedAt": Recorded time input by user in Localdatetime format in per min rate.
-"status": This will be computed based on the business logic shared and is kept in EmissionService layer. Currently, by considering time contraint, it is implemented in basic JAVA but it can be improved using latest JAVA concepts like streamAPI.
+#### "id": Auto generated ID
+#### "uuid": User passes uuid through url. One uuid will be mapped with multiple CO2 records which user will provide via POST end point.
+#### "productId": This is constant since it is reading data for "sensor" product.
+#### "co2": Integer value in PPM.
+#### "recordedAt": Recorded time input by user in Localdatetime format in per min rate.
+#### "status": This will be computed based on the business logic shared and is kept in EmissionService layer. Currently, by considering time contraint, it is implemented in basic JAVA but it can be improved using latest JAVA concepts like streamAPI.
 
 ## 4) Get sensor status on the available records using GET /api/v1/sensors/{uuid}
 
